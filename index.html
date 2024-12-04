@@ -4,72 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Factory - 3D-Druck-Produkte</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS einbinden -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav>
-            <a href="#" class="logo"><img src="assets/logo.png" alt="Print Factory Logo"></a>
+        <div class="header-content">
+            <img src="assets/logo.png" alt="Print Factory Logo" class="logo">
             <h1>Print Factory</h1>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero-Bereich -->
-        <section class="hero">
-            <h1>Dein Partner für 3D-Druck</h1>
-            <p>Hochwertige und individuelle Produkte, präzise gefertigt.</p>
-        </section>
+    <!-- Hero-Bereich -->
+    <section class="hero">
+        <h1>3D-Druck neu gedacht</h1>
+        <p>Qualität, Präzision und Innovation – alles aus einer Hand.</p>
+    </section>
 
-        <!-- Produkte-Bereich -->
-        <section class="produkte">
-            <h2>Unsere Produkte</h2>
-            <div class="produkt-liste">
-                <!-- Produkt 1 -->
-                <div class="produkt">
-                    <img src="assets/produkt1.jpg" alt="Produkt 1">
-                    <h3>3D-gedrucktes Modell</h3>
-                    <p>Ein detailreiches Modell, perfekt für Prototypen oder Dekoration.</p>
-                    <p><strong>Preis:</strong> 25€</p>
-                    <button onclick="kaufanleitung()">Kaufen</button>
-                </div>
-
-                <!-- Produkt 2 -->
-                <div class="produkt">
-                    <img src="assets/produkt2.jpg" alt="Produkt 2">
-                    <h3>Individuelle Figur</h3>
-                    <p>Gestalte deine persönliche Figur – ideal als Geschenk!</p>
-                    <p><strong>Preis:</strong> 40€</p>
-                    <button onclick="kaufanleitung()">Kaufen</button>
-                </div>
-
-                <!-- Produkt 3 -->
-                <div class="produkt">
-                    <img src="assets/produkt3.jpg" alt="Produkt 3">
-                    <h3>Ersatzteile</h3>
-                    <p>Präzise gefertigte Ersatzteile für verschiedenste Anwendungen.</p>
-                    <p><strong>Preis:</strong> Ab 15€</p>
-                    <button onclick="kaufanleitung()">Kaufen</button>
-                </div>
+    <!-- Produkte -->
+    <section class="produkte">
+        <h2>Unsere Produkte</h2>
+        <div class="produkt-liste">
+            <!-- Produkt 1 -->
+            <div class="produkt">
+                <img src="assets/produkt1.jpg" alt="Produkt 1">
+                <h3>3D-gedrucktes Modell</h3>
+                <p>Detailreiche Modelle, perfekt für Prototypen oder Dekoration.</p>
+                <p><strong>Preis:</strong> 25€</p>
+                <button onclick="kaufanleitung()">Jetzt kaufen</button>
             </div>
-        </section>
+            <!-- Produkt 2 -->
+            <div class="produkt">
+                <img src="assets/produkt2.jpg" alt="Produkt 2">
+                <h3>Individuelle Figur</h3>
+                <p>Gestalte deine persönliche Figur – ideal als Geschenk!</p>
+                <p><strong>Preis:</strong> 40€</p>
+                <button onclick="kaufanleitung()">Jetzt kaufen</button>
+            </div>
+            <!-- Produkt 3 -->
+            <div class="produkt">
+                <img src="assets/produkt3.jpg" alt="Produkt 3">
+                <h3>Ersatzteile</h3>
+                <p>Präzise gefertigte Ersatzteile für verschiedenste Anwendungen.</p>
+                <p><strong>Preis:</strong> Ab 15€</p>
+                <button onclick="kaufanleitung()">Jetzt kaufen</button>
+            </div>
+        </div>
+    </section>
 
-        <!-- Kaufanleitung -->
-        <section class="kaufanleitung">
-            <h2>So funktioniert der Kauf</h2>
-            <ol>
-                <li>Kontaktiere uns per E-Mail: <strong>info@printfactory.de</strong></li>
-                <li>Gib die Produktnummer und die gewünschte Menge an.</li>
-                <li>Wir senden dir ein Angebot mit den Zahlungsdetails.</li>
-                <li>Nach Zahlungseingang beginnen wir mit dem Druck deines Produkts.</li>
-            </ol>
-        </section>
-    </main>
+    <!-- Kaufanleitung -->
+    <section class="kaufanleitung">
+        <h2>So kannst du bestellen</h2>
+        <ol>
+            <li>Sende uns eine E-Mail an: <strong>info@printfactory.de</strong></li>
+            <li>Teile uns die Produktnummer und Menge mit.</li>
+            <li>Wir senden dir ein Angebot und die Zahlungsdetails.</li>
+            <li>Nach Zahlungseingang starten wir mit der Produktion!</li>
+        </ol>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Print Factory by Oskar. Alle Rechte vorbehalten.</p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
