@@ -1,39 +1,90 @@
-/* Reset */
+/* Google Fonts einbinden */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Allgemeines Reset */
 body, h1, h2, p, ol, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Allgemeine Einstellungen */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0f0f0f;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+    color: #f9f9f9;
     line-height: 1.6;
+    margin: 0;
 }
 
+/* Header */
 header {
-    background: #1a1a1a;
+    background: linear-gradient(to right, #00adee, #ff4747);
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header .logo img {
     width: 150px;
 }
 
-.hero {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: url('../assets/hero.jpg') no-repeat center center/cover;
-    color: #00adee;
+header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
 }
 
+/* Hero-Bereich */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('../assets/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffcf33;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.hero .button {
+    background: #00adee;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.hero .button:hover {
+    background: #ff4747;
+}
+
+/* Produkte-Bereich */
 .produkte {
     padding: 2rem;
     text-align: center;
+}
+
+.produkte h2 {
+    font-size: 2.5rem;
+    color: #ffcf33;
+    margin-bottom: 2rem;
 }
 
 .produkt-liste {
@@ -44,38 +95,88 @@ header .logo img {
 }
 
 .produkt {
-    background: #1a1a1a;
+    background: linear-gradient(to bottom, #1a1a1a, #282828);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produkt:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .produkt img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .produkt h3 {
     color: #00adee;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.produkt p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #ccc;
 }
 
 .produkt button {
     background: #ff4747;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
 }
 
+.produkt button:hover {
+    background: #ffcf33;
+}
+
+/* Kaufanleitung */
 .kaufanleitung {
     padding: 2rem;
-    background: #1a1a1a;
+    background: linear-gradient(to bottom, #282828, #1a1a1a);
+    color: #f9f9f9;
     margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .kaufanleitung h2 {
     text-align: center;
-    color: #ff4747;
+    color: #ffcf33;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.kaufanleitung ol {
+    list-style: decimal;
+    margin: 1rem 2rem;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.kaufanleitung li {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1a1a1a;
+    font-size: 0.8rem;
+    color: #ccc;
+    border-top: 2px solid #00adee;
 }
