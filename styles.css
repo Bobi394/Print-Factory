@@ -97,7 +97,7 @@ header h1 {
     color: #ccc;
 }
 
-.produkt button {
+.produkt a {
     background: #ff4747;
     color: white;
     padding: 0.7rem 1.5rem;
